@@ -40,21 +40,32 @@
     .contact {
       margin-bottom: 20px;
     }
+
+    @media (max-width: 600px) {
+      img {
+        transform: none !important;
+        padding-top: 0 !important;
+        margin: 10px auto;
+        display: block;
+      }
+    }
+
   </style>
 </head>
 <body>
-    <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-        <div>
-            <h1>Jin-Ching Shen</h1>
-            <p>Ph.D. Candidate, College of Artificial Intelligence,<br>
-            National Yang Ming Chiao Tung University</p>
-            <p>Adjunct Lecturer, College of Management, Yuan Ze University</p>
-            <p>Email: <a href="mailto:Jason162868@gmail.com">Jason162868@gmail.com</a></p>
-        </div>
-        <img src="head.jpg" alt="Jin-Ching Shen" 
-        style="width:150px; height:auto; border-radius: 10px; padding-top: 5px; transform: translateY(5px) translateX(-15px);">
-   
+  <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+    <div style="flex: 1; min-width: 250px;">
+      <h1>Jin-Ching Shen</h1>
+      <p>Ph.D. Candidate, College of Artificial Intelligence,<br>
+      National Yang Ming Chiao Tung University</p>
+      <p>Adjunct Lecturer, College of Management, Yuan Ze University</p>
+      <p>Email: <a href="mailto:Jason162868@gmail.com">Jason162868@gmail.com</a></p>
     </div>
+    <div style="flex-shrink: 0;">
+      <img src="head.jpg" alt="Jin-Ching Shen" 
+        style="width:150px; height:auto; border-radius: 10px; padding-top: 5px; transform: translateY(5px) translateX(-15px);">
+    </div>
+  </div>
       <hr>
   <div class="section">
     <h2>I. 教育背景</h2>
